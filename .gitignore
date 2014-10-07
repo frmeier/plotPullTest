@@ -1,0 +1,9 @@
+pdfs
+*.dat
+*.csv
+*.d
+*.so
+*.bz2
+*.jpg
+*.swp
+.DS_Store
