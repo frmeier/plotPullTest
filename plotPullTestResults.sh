@@ -26,6 +26,7 @@ awk '{ sub(/\r$/,"") };1' $1 > $TMPFILE
 NFILES=`awk -v tmpfile="$TMPFILE" 'BEGIN { f=tmpfile "" 0; } /Count of Lot/ { f=tmpfile "" ++i; } { print > f; } END { print i; }' $TMPFILE`
 echo $NFILES
 
+# now extract the data from csv and plot the data using root
 for ((i=1; i<=NFILES; i++))
 do
     echo $i

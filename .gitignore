@@ -7,3 +7,4 @@ pdfs
 *.jpg
 *.swp
 .DS_Store
+*.pdf
